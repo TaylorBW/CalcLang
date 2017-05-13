@@ -1,0 +1,59 @@
+Motivation/Examples:
+
+Want programs like:
+
+---------
+x=3.1
+y=7.2
+z=x+y*17
+print z
+--------
+
+input "enter x to compute square root of: " x
+y = sqrt(x)
+print "square root is " y
+--------
+
+===========================================
+Finite Automaton for Lexical Part of CalcLang:
+   see 
+===========================================
+CFG for CalcLang:
+
+
+<statements> -> <statement>
+<statements> -> <statement> <statements>
+
+<statement> -> IDENTIFIER = <expression>
+<statement> -> message STRING 
+<statement> -> print <expression>
+<statement> -> newline
+<statement> -> input STRING IDENTIFIER
+
+Switch notation for convenience:
+  E instead of <expression>, T, F, V, N  (see page 20)
+
+E -> T
+E -> T + E
+E -> T - E
+
+T -> F
+T -> F*T
+T -> F/T
+
+F -> N
+F -> IDENTIFIER
+F -> (E)  
+F -> - F
+F -> IDENTIFIER ( E )
+
+=============================
+Informal specification of semantics (meaning):
+
+each kind of Node knows how to execute itself!
+Use recursion!
+=============================
+
+What are the built-in functions?
+
+sqrt, exp, sin, cos  (should do things so that can expand arbitrarily)

@@ -1,0 +1,26 @@
+input"enter input v1: " var1
+msg "start_test" var2 = 1.11 + 13
+print var1 newline
+AN = 50.3 + -13
+S =1.2 + 6.2
+SN = -1 + -6.3
+m = 2 * 7.8
+mn = -2.2 * -7.9
+D = 3 / 9.9
+DN = -3.3 / -9
+n = 18
+y = 10
+z = 12
+a = 20
+FUNCT = n * n - z + 10 / -5.4
+FUNCTN = -n * -n - -z + -10 / 5.4
+print a + 20/2.2
+newline
+show z
+input "a Value For H:"H
+z = (3)
+k = sin(y/9.1 + (cos(-sin(sqrt(3.9 * 42)))))
+newline print H newline
+print H 
+msg"completed Test"newline
+z = 1

@@ -1,0 +1,23 @@
+msg "Test 1 " 
+input "enter a (should be 10.5): " a
+msg "got input " 
+show a newline 
+b = 3.1 c = -4.4 x = a+b*c 
+msg "-3.14: " 
+show x newline 
+x = (a+b)*c 
+msg "-59.84: " 
+show x newline msg "3.5: " 
+show 3.5 newline msg "-3.5: " 
+show -3.5 newline msg "sqrt(2)=1.41421...: " 
+show sqrt( 2 ) newline msg "-32.55: " 
+show a*-b newline
+ msg "sin( 45 ) = .7071... or .8509035... : " 
+ show sin(45) newline msg "10.5: " 
+ show --a newline msg "-10.5: " 
+ show ---a newline msg "10.5: " 
+ show (((a))) newline 
+ x = 3 + b + a*b + a*a*b*(b+c) 
+ msg "-405.6575: "
+  show x newline
+   msg "bye" 
